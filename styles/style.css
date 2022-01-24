@@ -14,6 +14,10 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  position: relative;
+  display: flex;
+
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -22,10 +26,332 @@
   width: 568px;
 }
 
+div {
+  border: solid blue;
+  margin: 0px;
+
+}
+
+.logo {
+  width: 183px;
+  height: 32px;
+}
+
+/* свойство для позиционирования модификатора */
+.logo_place_header {
+
+  margin-left: 64px;
+  position: absolute;
+  top: 30px;
+  order: 4;
+
+}
+
+.header__title {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 64px;
+  width: 730px;
+
+
+}
+
+.header__title_text {
+
+  font-size: 102px;
+  font-weight: bolder;
+  line-height: 96px;
+  margin: 0;
+  order: 10;
+  z-index: 10;
+}
+
+.header__subtitle {
+  width: 388px;
+  margin-left: 64px;
+  position: absolute;
+  bottom: 30px;
+}
+
+.header__subtitle_text {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.header__main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  order: 1;
+}
+
+.header__square-pic {
+  width: 568px;
+  height: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  background-color: #2f80ed;
+  order: -1;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.two-columns__brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: deepskyblue;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph_text {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-title {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.section-title_text {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-subtitle {
+  width: 60%;
+  margin: auto;
+
+
+}
+
+.section-subtitle_text {
+  line-height: 34px;
+  font-size: 24;
+  font-weight: normal;
+  text-align: center;
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 100px;
+  justify-content: space-between;
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+
+
+}
+
+.table__heading {
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.second-line {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.feynman {
+  background-image: url(../images/feynman.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 867px 637px;
+  height: 890px;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.feynman__title {
+  width: 648px;
+  text-align: center;
+  margin: auto;
+
+}
+
+.feynman__title_text {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.feynman__subtitle {
+  margin: auto;
+  text-align: center;
+}
+
+.feynman__subtitle_text {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+}
+
+.section-title_theme_dark {
+  margin: auto;
+  text-align: center;
+  color: white;
+  width: 60%;
+}
+
+.section-title_theme_dark_text {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.section-subtitle_theme_dark {
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  width: 60%;
+}
+
+.section-subtitle_theme_dark_text {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0px;
+}
+
+.kaufman {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #1f1f1f
+}
+
+.kaufman_box {
+  margin-bottom: 0px;
+}
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  min-height: 350px;
+}
+
+
+.logo_place_footer {
+  width: 183px;
+  height: 35px;
+}
+
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  margin-bottom: 18px;
+  margin-top: auto;
+}
+
+.footer__columns {
+  width: 90%;
+  margin: auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__column-links {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 16px;
+
+}
+
+.footer__column-link {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer__social-icon {
+  padding-right: 10px;
+  width: 16px;
+  height: 16px;
 }
