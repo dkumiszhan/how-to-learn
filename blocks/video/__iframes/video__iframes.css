@@ -6,4 +6,6 @@
   column-gap: 20px;
   position: relative;
   bottom: -50px;
+  list-style: none;
+  padding: 0;
 }
